@@ -1,7 +1,31 @@
+@import url('https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css');
+@font-face{
+  font-family: 'Noto Serif';
+  font-weight: 100;
+  font-weight: 200;
+  font-weight: 300;
+  font-weight: 400;
+  font-weight: 500;
+  src: local('NotoSerifCJKjp-Regular'),
+       local('SourceHanSerifJP-Regular'),
+       local('Noto Serif CJK JP'),
+       local('Source Han Serif JP');
+}
+@font-face{
+  font-family: 'Noto Serif';
+  font-weight: 600;
+  font-weight: 700;
+  font-weight: 800;
+  font-weight: 900;
+  src: local('NotoSerifCJKjp-Bold'),
+       local('SourceHanSerifJP-Bold'),
+       local('Noto Serif CJK JP'),
+       local('Source Serif Sans JP');
+}
 body {
   counter-reset: keiyaku-chapter;
   position: relative;
-  font-family: serif;
+  font-family: YakuHanMP, 'Noto Serif', serif;
 }
 body > h1 {
   text-align: center;

@@ -22,20 +22,36 @@
        local('Noto Serif CJK JP'),
        local('Source Serif Sans JP');
 }
+:root{
+  font-size: 10px;
+}
+.markdown-body {
+  font-size: 10px;
+}
 body {
   counter-reset: keiyaku-chapter;
   position: relative;
   font-family: YakuHanMP, 'Noto Serif', serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  /*letter-spacing: 0.038em;*/
 }
 body > h1 {
   text-align: center;
+  font-size: 1.5rem;
 }
 body > h1:first-child {
   margin-top: 0;
+  /*letter-spacing: 0.25em;*/
 }
 body > h2 {
   counter-reset: keiyaku-paragraph;
   counter-increment: keiyaku-chapter;
+  font-size: 1.125rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 body > h2::before {
   content: "第" counter(keiyaku-chapter) "条（";
@@ -47,6 +63,10 @@ body > p {
   counter-increment: keiyaku-paragraph;
   text-indent: 1em;
   padding-left: 1em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 body > h1 + p,
 body > h2 + p,
